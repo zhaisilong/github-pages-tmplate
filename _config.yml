@@ -1,0 +1,113 @@
+# Site settings
+title: Zhaisilong Blog
+SEOTitle: Zhaisilong Blog
+header-img: img/home-bg.jpg
+email: lawrencezhaisl@gmail.com
+description: "这"
+keyword: "Something ..."
+url: "https://www.zhaisilong.com"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: true
+# weibo_username:     seeyoupro
+# zhihu_username:     huxpro
+# github_username:    huxpro
+# twitter_username:   seeyoupro
+# facebook_username:  lawrence wonder
+# linkedin_username:  lawrence-wonder-21b083183
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 6   # posts showed in one page
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md","hiden"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+timezone: CN
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate, jekyll-feed]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+
+# Disqus settings
+# disqus_username: seeyou-1
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 2ee82a08132aacc505f1932a704aed76
+
+# Google Analytics
+# ga_track_id: 'UA-89427506-6'            # Format: UA-xxxxxx-xx
+# ga_domain: seeyou.tk
+
+# Google Analytics with G-ID
+ga_mesurement_id: true            # Format: G-xxxxxxxxxx
+
+
+
+# Sidebar settings
+sidebar: false                           # whether or not using Sidebar.
+sidebar-about-description: "Seeyou，一个正在练级的药学研究生，人工智能跨专业研究者。 <br> A postgraduate student in pharmacy who is leveling up & Researcher in cross-professional field of artificial intelligence. "
+sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: true
+
+
+
+# Friends
+friends: [
+    {
+    #     title: "Su",
+    #     href: "http://su.gallery/"
+    # },{
+    }
+]
